@@ -1,7 +1,10 @@
 import requests, base64, json, os 
 
+def getKey():
+    return "b6959703bc710cc3740e1a4b69b10dab"
+
 def upload(filename):
-    key = "b6959703bc710cc3740e1a4b69b10dab"
+    key = getKey()
     api_endpoint = f"https://api.imgbb.com/1/upload?key={key}"
     with open(f'pages/{filename}', 'rb') as f:
         data = {
