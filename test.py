@@ -17,3 +17,10 @@ for index, url in enumerate(urls):
     if res.status_code != 200:
         print(f"{index}: {url}")
         input()
+        
+for index, url in enumerate([]):
+    print(f"Checking page {index}...")
+    res = requests.get(url)
+    if res.status_code != 200:
+        print(f"{index}: {url}")
+        input()
